@@ -1,0 +1,53 @@
+// .logo-container {
+//     width: 400px;
+//     height: 90%;
+//     z-index: 0;
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     right: 15%;
+//     bottom: 0;
+//     left: auto;
+//     margin: -35px auto 0;
+//     opacity: 0;
+//     svg {
+//         width: 120%;
+//         height: 100%;
+//         bottom: 0;
+
+//         .svg-container {
+//             stroke: #ffd700;
+//             stroke-width: 0.1px;
+//         }
+//     }
+
+//     .solid-logo {
+//         width: 120%;
+//         height: 100%;
+//         position: absolute;
+//         top: auto;
+//         right: auto;
+//         bottom: auto;
+//         left: 0;
+//         margin: auto;
+//         z-index: 1;
+//         opacity: 0;
+//     }
+// }
+
+.logo-container {
+    width: 350px;
+    height: max-content;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -35px;
+    border-radius: 5px;
+
+    .solid-logo {
+        width: 100%;
+        height: auto;
+        border-radius: 50% 50% 5px 5px;
+    }
+}
