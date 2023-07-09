@@ -1,40 +1,3 @@
-// .logo-container {
-//     width: 400px;
-//     height: 90%;
-//     z-index: 0;
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     right: 15%;
-//     bottom: 0;
-//     left: auto;
-//     margin: -35px auto 0;
-//     opacity: 0;
-//     svg {
-//         width: 120%;
-//         height: 100%;
-//         bottom: 0;
-
-//         .svg-container {
-//             stroke: #ffd700;
-//             stroke-width: 0.1px;
-//         }
-//     }
-
-//     .solid-logo {
-//         width: 120%;
-//         height: 100%;
-//         position: absolute;
-//         top: auto;
-//         right: auto;
-//         bottom: auto;
-//         left: 0;
-//         margin: auto;
-//         z-index: 1;
-//         opacity: 0;
-//     }
-// }
-
 .logo-container {
     width: 350px;
     height: max-content;
@@ -50,4 +13,22 @@
         height: auto;
         border-radius: 50% 50% 5px 5px;
     }
+}
+.download-btn-con {
+    text-align: right;
+}
+.download-btn {
+    margin-right: 20px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: darkmagenta;
+    background-color: darksalmon;
+}
+.download-btn:hover {
+    background-color: coral;
 }
