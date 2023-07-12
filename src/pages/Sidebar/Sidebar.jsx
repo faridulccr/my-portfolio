@@ -7,39 +7,29 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link, NavLink } from "react-router-dom";
-import LogoSubtitle from "../../assets/images/faridul.svg";
+import { Link } from "react-router-dom";
 import LogoF from "../../assets/images/newF2.svg";
+import ActiveRoute from "../../components/ActiveRoute.jsx/ActiveRoute";
 import "./Sidebar.scss";
 
 const Sidebar = () => {
     return (
         <div className="nav-bar">
-            <Link className="logo" to="/">
+            <Link className="logo block" to="/">
                 <img className="logoF" src={LogoF} alt="logo" />
-                <img className="sub-logo" src={LogoSubtitle} alt="faridul" />
+                <h2 className="sub-logo text-center">Faridul</h2>
             </Link>
 
             <nav>
-                <NavLink exact="true" activeclassname="active" to="/">
+                <ActiveRoute to="/">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-                </NavLink>
-                <NavLink
-                    exact="true"
-                    activeclassname="active"
-                    className="about-link"
-                    to="/about"
-                >
+                </ActiveRoute>
+                <ActiveRoute className="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-                </NavLink>
-                <NavLink
-                    exact="true"
-                    activeclassname="active"
-                    className="contact-link"
-                    to="/contact"
-                >
+                </ActiveRoute>
+                <ActiveRoute className="contact-link" to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-                </NavLink>
+                </ActiveRoute>
             </nav>
 
             <ul>

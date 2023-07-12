@@ -4,7 +4,7 @@ import "./Layout.scss";
 
 const Layout = ({ children }) => {
     return (
-        <div className="App">
+        <div className="app">
             <Sidebar />
             <div className="page">
                 <span className="tags top-tags">&lt;body&gt;</span>

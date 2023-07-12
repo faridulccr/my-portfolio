@@ -1,0 +1,55 @@
+// declare a variable in sass file by $
+$primary-color: #ffd700;
+
+@import "animate.css"; // for using animation in the file
+@import "loaders.css/src/animations/pacman.scss";
+
+// in sass for link to font family then use @font-face
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "La Belle Aurore";
+    src: url("./assets/fonts/LaBelleAurore.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 300 11px/1.4 "Helvetica Neue", "sans-serif"; /*weight size/line-height default-family safty-family*/
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea {
+    font-family: "Helvetica Neue";
+}
+
+.loader-active {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    animation: fadeOut 1s 1s;
+    animation-fill-mode: forwards;
+}
