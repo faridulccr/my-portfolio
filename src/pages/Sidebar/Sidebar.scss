@@ -21,7 +21,12 @@
             font-size: 16px;
             font-weight: 900;
             transition: transform 1s;
-            background: linear-gradient(to right, #ee0ca3fb, #93ec04e1, #fff);
+            background: linear-gradient(
+                to right,
+                #ee0ca3fb,
+                #e65f06f8,
+                #93ec04e1
+            );
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }

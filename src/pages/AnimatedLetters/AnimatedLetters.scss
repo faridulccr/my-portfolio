@@ -1,11 +1,20 @@
 .text-animate {
     display: inline-block;
     opacity: 0;
-    animation: bounceIn 1s 1s;
+    animation: bounceIn 2s 1s;
     animation-fill-mode: forwards;
     min-width: 10px;
 }
-
+.text-animate2 {
+    background: linear-gradient(to top, #ee0ca3fb, #e65f06f8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    opacity: 0.05;
+    animation: bounceIn 2s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+}
 .text-animate-hover {
     min-width: 10px;
     display: inline-block;
@@ -21,5 +30,12 @@
 @for $i from 1 through 25 {
     .text-animate._#{$i} {
         animation-delay: #{($i / 10) + 1.5}s;
+    }
+}
+
+// for loop in sass i=1; i<=25
+@for $i from 1 through 25 {
+    .text-animate2._#{$i} {
+        animation-delay: #{($i / 6)}s;
     }
 }

@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import "./AnimatedLetters.scss";
 
-const AnimatedLetters = ({ letterClass = "", strArray = [], id }) => {
+const AnimatedLetters = ({ letterClass = "", text = "", id = 1 }) => {
+    const strArray = text.split("");
+
     return (
         <>
             {strArray.map((char, index) => (

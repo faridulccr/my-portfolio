@@ -7,11 +7,11 @@ const Layout = ({ children }) => {
         <div className="app">
             <Sidebar />
             <div className="page">
-                <span className="tags top-tags">&lt;body&gt;</span>
-                {children}
-                <span className="tags bottom-tags">&lt;/body&gt;</span>
-                <br />
-                <span className="tags bottom-tag-html">&lt;/html&gt;</span>
+                <p className="tags top-tag-html">&lt;html&gt;</p>
+                <p className="tags top-tags">&lt;body&gt;</p>
+                <div className="min-h-full py-20">{children}</div>
+                <p className="tags bottom-tags">&lt;/body&gt;</p>
+                <p className="tags bottom-tag-html">&lt;/html&gt;</p>
             </div>
         </div>
     );

@@ -1,4 +1,5 @@
 import Loader from "react-loaders";
+import { Link } from "react-router-dom";
 import logoF from "../../assets/images/Faridul.jpg";
 import "./Logo.scss";
 
@@ -18,17 +19,28 @@ const Logo = () => {
         });
     };
     return (
-        <>
-            <div className="download-btn-con">
-                <button className="download-btn" onClick={onButtonClick}>
-                    Download <br /> Resume
-                </button>
-            </div>
+        <div>
             <div className="logo-container">
                 <img className="solid-logo" src={logoF} alt="faridul's face" />
             </div>
+            <div className="gradient-border mx-auto mt-5">
+                <button className="flat-button" onClick={onButtonClick}>
+                    DOWNLOAD RESUME
+                </button>
+            </div>
+            <div className="gradient-border mx-auto mt-5">
+                <Link to="/skills" className="flat-button">
+                    MY SKILLS
+                </Link>
+            </div>
+            <div className="gradient-border mx-auto mt-5">
+                <Link to="/projects" className="flat-button">
+                    MY PROJECTS
+                </Link>
+            </div>
+
             <Loader type="pacman" />
-        </>
+        </div>
     );
 };
 

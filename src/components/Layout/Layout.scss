@@ -8,34 +8,40 @@
     min-height: 100vh;
     color: #444;
     background-color: #022c43;
+    position: relative;
 }
 
 .tags {
     color: #ffd700;
     opacity: 0.6;
-    position: absolute;
-    left: 120px;
     font-size: 18px;
     font-family: "La Belle Aurore";
+    position: absolute;
 }
 
 .top-tags {
-    top: 35px;
+    top: 20px;
+    left: 30px;
 }
 
 .bottom-tags {
+    left: 30px;
     bottom: 25px;
 }
-
+.top-tag-html {
+    top: 5px;
+    left: 10px;
+}
 .bottom-tag-html {
-    bottom: 0;
-    margin-left: -20px;
+    bottom: 5px;
+    left: 10px;
 }
 
 .container {
+    display: block;
     height: 100%;
-    // min-height: 566px;
-    // will-change: contents;
+    min-height: 566px;
+    will-change: contents;
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
