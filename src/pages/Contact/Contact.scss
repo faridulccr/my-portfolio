@@ -12,6 +12,15 @@
         padding: 0;
         margin: 0;
 
+        .gradient-border {
+            display: block;
+            width: 100%;
+            padding: 3px;
+        }
+        .gradient-border.send-btn {
+            display: inline-block;
+            width: fit-content;
+        }
         li {
             padding: 0;
             margin: 0;
@@ -23,18 +32,6 @@
             opacity: 0;
             animation: fadeInUp 2s 2s;
             animation-fill-mode: forwards;
-            clear: both;
-        }
-
-        li.half {
-            width: 49%;
-            margin-left: 2%;
-            float: left;
-            clear: none;
-
-            &:first-child {
-                margin-left: 0;
-            }
         }
     }
 
@@ -63,62 +60,84 @@
         font-family: "sans-serif";
         resize: none;
     }
-
-    .flat-button {
-        color: #ffd700;
-        background: 0 0;
-        font-size: 11px;
-        font-weight: bold;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 8px 10px;
-        border: 1px solid #ffd700;
-        float: right;
-        border-radius: 4px;
-
-        &:hover {
-            color: #115173;
-            background-color: #ffd700;
-        }
+    .message.gradient-border {
+        height: 156px;
     }
 }
 
 .info-map {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     right: 0;
     z-index: 999999;
     width: 200px;
-    padding: 20px;
-    color: #fff;
-    font-family: "Helvetica";
-    font-size: 16px;
-    font-weight: 300;
-    opacity: 0;
-    animation: fadeIn 1s 1.5s;
-    animation-fill-mode: forwards;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 8px;
 
-    span {
+    .text-color {
+        background: linear-gradient(
+            45deg,
+            #ee2e0cfb,
+            #4de606f8,
+            #e606a3f1,
+            #e6065cf8
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Helvetica";
         font-size: 16px;
-        display: block;
-        padding-top: 20px;
-        color: #ffd700;
+        font-weight: 600;
+        opacity: 0;
+        animation: fadeIn 1s 1.5s;
+        animation-fill-mode: forwards;
     }
 }
 
 .map-wrap {
+    position: relative;
     background-color: rgba(8, 253, 216, 0.1);
-    float: right;
-    width: 53%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .leaflet-container {
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     position: relative;
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
+}
+.leaflet-popup-content-wrapper {
+    background-color: #022c43 !important;
+}
+.leaflet-popup-content {
+    background: linear-gradient(
+        45deg,
+        #ee2e0cfb,
+        #4de606f8,
+        #e606a3f1,
+        #e6065cf8
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Helvetica";
+    font-size: 16px !important;
+}
+@media screen and (max-width: 640px) {
+    .map-wrap {
+        margin: 0 10px 20px;
+        height: 400px;
+    }
+    .info-map {
+        width: 150px;
+        padding: 10px;
+
+        .text-color {
+            font-size: 12px;
+        }
+    }
 }

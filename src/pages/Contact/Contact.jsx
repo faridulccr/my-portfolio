@@ -10,7 +10,6 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 
 const Contact = () => {
     const formRef = useRef();
-    const aboutMe = ["C", "o", "n", "t", "a", "c", "t", " ", "m", "e"];
     const [letterClass, setLetterClass] = useState("text-animate");
 
     useEffect(() => {
@@ -50,10 +49,10 @@ const Contact = () => {
         <>
             <div className="container contact-page">
                 <div className="text-zone">
-                    <h1>
+                    <h1 className="heading">
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={aboutMe}
+                            text="Contact Me"
                             id={1}
                         />
                     </h1>
@@ -70,23 +69,25 @@ const Contact = () => {
                     <div className="contact-form">
                         <form ref={formRef} onSubmit={sendEmail}>
                             <ul>
-                                <li className="half">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        placeholder="Name"
-                                        required
-                                    />
-                                </li>
-                                <li className="half">
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        placeholder="Email"
-                                        required
-                                    />
-                                </li>
-                                <li>
+                                <div className="grid sm:grid-cols-2 gap-5">
+                                    <li className="half gradient-border">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Name"
+                                            required
+                                        />
+                                    </li>
+                                    <li className="half gradient-border">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            required
+                                        />
+                                    </li>
+                                </div>
+                                <li className=" gradient-border">
                                     <input
                                         type="text"
                                         name="subject"
@@ -94,30 +95,26 @@ const Contact = () => {
                                         required
                                     />
                                 </li>
-                                <li>
+                                <li className="message gradient-border">
                                     <textarea
                                         name="message"
                                         placeholder="Message"
                                         required
                                     ></textarea>
                                 </li>
-                                <li>
-                                    <input
-                                        type="submit"
-                                        className="flat-button"
-                                        value="SEND"
-                                    />
+                                <li className="text-right">
+                                    <div className="gradient-border send-btn mt-6">
+                                        <button
+                                            type="submit"
+                                            className="flat-button"
+                                        >
+                                            SEND
+                                        </button>
+                                    </div>
                                 </li>
                             </ul>
                         </form>
                     </div>
-                </div>
-
-                <div className="info-map">
-                    Faridul Islam, <br />
-                    Bangladesh, <br />
-                    Rangpur City <br />
-                    <span>faridulccr@gmail.com</span>
                 </div>
 
                 <div className="map-wrap">
@@ -133,6 +130,14 @@ const Contact = () => {
                             </Popup>
                         </Marker>
                     </MapContainer>
+                    <div className="info-map">
+                        <div className="text-color">
+                            Faridul Islam <br />
+                            Rangpur City, <br />
+                            Bangladesh. <br />
+                            faridulccr@gmail.com
+                        </div>
+                    </div>
                 </div>
             </div>
             <Loader type="pacman" />

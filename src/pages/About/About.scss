@@ -168,6 +168,20 @@
             }
         }
     }
+    .contact-page {
+        grid-template-columns: 1fr;
+        .text-zone {
+            margin-left: 15px !important;
+            padding-right: 10px;
+
+            .heading {
+                &::before {
+                    left: 25px;
+                    top: 0px;
+                }
+            }
+        }
+    }
 
     .cube-spinner {
         margin-left: calc(50% - 75px);

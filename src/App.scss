@@ -66,7 +66,7 @@ textarea {
 
 .flat-button {
     // background: linear-gradient(45deg, #4b810efb, #b604eca6);
-    background: #022c43;
+    background: #022c43 !important;
     color: #ee0ca3fb;
     font-size: 13px;
     font-weight: 400;
@@ -82,7 +82,11 @@ textarea {
     transition: 0.3s;
 
     &:hover {
-        background: linear-gradient(45deg, purple, rgb(216, 145, 13));
+        background: linear-gradient(
+            45deg,
+            purple,
+            rgb(216, 145, 13)
+        ) !important;
         color: #fff;
     }
 }
