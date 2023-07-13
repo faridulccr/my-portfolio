@@ -33,7 +33,6 @@ html {
 body {
     font: 300 11px/1.4 "Helvetica Neue", "sans-serif"; /*weight size/line-height default-family safty-family*/
     display: block;
-    overflow: inherit;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -56,9 +55,10 @@ textarea {
 }
 
 .gradient-border {
+    display: inline-block;
     width: fit-content;
     position: relative;
-    background: linear-gradient(45deg, purple, red);
+    background: linear-gradient(45deg, red, purple);
     // background: linear-gradient(45deg, #b604eca6, #4b810efb);
     padding: 3px;
     border-radius: 5px;
@@ -82,8 +82,7 @@ textarea {
     transition: 0.3s;
 
     &:hover {
-        background: linear-gradient(45deg, rgb(216, 145, 13), purple);
-        border: 1px solid linear-gradient(to right, #e65f06f8, #93ec04e1);
+        background: linear-gradient(45deg, purple, rgb(216, 145, 13));
         color: #fff;
     }
 }

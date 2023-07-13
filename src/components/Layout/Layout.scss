@@ -1,6 +1,8 @@
 .app {
+    min-width: 375px;
     width: 100%;
     min-height: 100vh;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 60px 1fr;
 }

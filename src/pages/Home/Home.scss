@@ -3,6 +3,7 @@
     grid-template-columns: 60% 40%;
     align-items: center;
 }
+
 .heading {
     color: #fff;
     font-size: 7rem;
@@ -53,4 +54,24 @@ h2 {
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
+}
+
+@media screen and (max-width: 640px) {
+    .home-page {
+        grid-template-columns: 1fr;
+    }
+
+    .heading {
+        font-size: 3rem;
+        &::before {
+            top: -20px;
+            left: -10px;
+            transform: translate(-100%, 100%);
+        }
+
+        &::after {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
 }

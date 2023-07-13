@@ -14,9 +14,6 @@ import "./About.scss";
 
 const About = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
-
-    const aboutMe = ["A", "b", "o", "u", "t", " ", "M", "e"];
-
     useEffect(() => {
         // this function will call at the end of text-animate class's action after 4.5 s
         setTimeout(() => {
@@ -28,41 +25,52 @@ const About = () => {
         <>
             <div className="container about-page">
                 <div className="text-zone">
-                    <h1>
+                    <h1 className="heading">
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={aboutMe}
+                            text="About Me"
                             id={1}
                         />
                     </h1>
                     {/* how ambitious I am */}
                     <p>
-                        I&apos;m a very passionate person, especially when it
-                        comes time to learn new technologies from young age.
-                        <span style={{ color: "#ffd700" }}>
-                            I&apos;m also passionate about making error-free
-                            websites with 100% client satisfaction.
-                        </span>
+                        I&apos;m a MERN Stack Developer with a strong passion
+                        for creating visually appealing and user-friendly
+                        websites and have completed my BBA in Accounting and
+                        Information System from the National University of
+                        Bangladesh in 2019. This academic journey provided me
+                        with a solid foundation in both the business and
+                        technology aspects of the field.
                     </p>
                     {/* how confident I am */}
                     <p>
-                        I have been attracted by technology and how tools work,
-                        things growing etc. I have already learned HTML, CSS,
-                        JavaScript, TypeScript, React Js, Next Js, Node Js,
-                        Express Js, Bootstrap, Tailwind, MongoDB/NoSQL for two
-                        years and more and continue learning to improve my
-                        coding knowledge.
+                        Aside from programming, I have a keen interest in
+                        complex problem-solving and mathematics. I enjoy
+                        tackling challenging math problems and even playing
+                        chess with strong players. These activities help me
+                        sharpen my analytical thinking and enhance my ability to
+                        approach problems from different angles.
                     </p>
                     {/* how definition I am */}
                     <p>
-                        I am spending so much time to improve my web development
-                        skills. Every day I want to learn something new,
-                        actually I love to write code.
+                        To summarize, I am a MERN Stack Developer. Alongside my
+                        BBA degree, my passion for problem-solving and love for
+                        mathematics further enhance my abilities in the field.
+                        Once again, I want to express my gratitude for your
+                        interest in getting to know me better.
                     </p>
+                    <div className="gradient-border mt-6">
+                        <a
+                            href="https://drive.google.com/file/d/1E8ME7B_dUuHy6XLEoJ3lK49rPic7dDkv/view?usp=drive_link"
+                            className="flat-button"
+                        >
+                            VIEW RESUME
+                        </a>
+                    </div>
                 </div>
 
                 <div className="stage-cube-cont">
-                    <div className="cubespinner">
+                    <div className="cube-spinner">
                         <div className="face1">
                             <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
                         </div>

@@ -1,16 +1,15 @@
 .about-page,
 .contact-page {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 45%;
-        transform: translateY(-50%);
-        width: 35%;
+        margin-left: 100px;
         vertical-align: middle;
         display: table-cell;
-        max-height: 90%;
 
-        h1 {
+        .heading {
+            width: fit-content;
             font-size: 4rem;
             font-family: "Coolvetica";
             color: #ffd700;
@@ -24,7 +23,7 @@
                 font-family: "La Belle Aurore";
                 font-size: 1.9rem;
                 position: absolute;
-                top: -15px;
+                top: 0px;
                 opacity: 0.6;
                 line-height: 0px;
             }
@@ -34,9 +33,9 @@
                 font-family: "La Belle Aurore";
                 font-size: 1.9rem;
                 position: absolute;
-                left: 0;
-                bottom: -15px;
-                opacity: 0.8;
+                left: 100%;
+                bottom: 0;
+                opacity: 0.6;
                 line-height: 0px;
             }
         }
@@ -68,18 +67,15 @@
         }
     }
 }
-
+.contact-page {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
 .stage-cube-cont {
-    width: 50%;
-    height: 100%;
-    padding-top: 14%;
-    position: absolute;
-    right: 0;
-    overflow: hidden;
-    // border: 1px solid black;
-
+    display: flex;
+    align-items: center;
     //spin animation
-    .cubespinner {
+    .cube-spinner {
         // can be used any name for animation
         animation-name: spinCube;
         animation-timing-function: ease-in-out;
@@ -88,10 +84,16 @@
         transform-style: preserve-3d;
         transform-origin: 100px 100px 0;
         margin-left: calc(50% - 100px);
+        margin-top: calc(-50% + 100px);
 
-        div {
-            width: 200px;
-            height: 200px;
+        .face1,
+        .face2,
+        .face3,
+        .face4,
+        .face5,
+        .face6 {
+            width: 180px;
+            height: 180px;
             border: 1px solid #ccc;
             background-color: rgba(255, 255, 255, 0.3);
             box-shadow: 0 0 20px 0px lightyellow;
@@ -143,6 +145,62 @@
         }
         83% {
             transform: rotateX(90deg);
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about-page {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        .text-zone {
+            margin-top: 250px;
+            margin-left: 15px !important;
+            padding-right: 10px;
+
+            .heading {
+                &::before {
+                    left: 25px;
+                    top: 0px;
+                }
+            }
+        }
+    }
+
+    .cube-spinner {
+        margin-left: calc(50% - 75px);
+        margin-top: calc(-100%) !important;
+
+        .face1,
+        .face2,
+        .face3,
+        .face4,
+        .face5,
+        .face6 {
+            width: 150px !important;
+            height: 150px !important;
+        }
+
+        .face1 {
+            //translateZ move the center point of the object
+            transform: translateZ(80px) !important;
+        }
+        .face2 {
+            transform: rotateX(90deg) translateZ(80px) !important;
+        }
+        .face3 {
+            transform: rotateY(90deg) rotateZ(180deg) translateZ(80px) !important;
+        }
+        .face4 {
+            transform: rotateY(-90deg) translateZ(80px) !important;
+        }
+        .face5 {
+            transform: rotateX(-90deg) translateZ(80px) !important;
+        }
+        .face6 {
+            transform: translateZ(-80px) !important;
         }
     }
 }

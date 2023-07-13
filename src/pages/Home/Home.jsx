@@ -9,12 +9,12 @@ import Logo from "./Logo";
 const Home = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
     const jobArr = [
-        " Web  Developer",
-        "JavaScript Developer",
+        " Web  Developer.",
+        "JavaScript Developer.",
         "Front-end Developer.",
         "MERN Stack Developer.",
         "React  Js Developer.",
-        "Back-end Developer",
+        "Back-end Developer.",
     ];
     const [index, setIndex] = useState(0);
 
@@ -33,7 +33,7 @@ const Home = () => {
 
     return (
         <div className="container home-page">
-            <div className="ps-32">
+            <div className="ps-32 mb-20 sm:mb-0">
                 <h1 className="heading">
                     <span className={letterClass}>H</span>
                     <span className={`${letterClass} _2`}>i,</span>
@@ -60,6 +60,11 @@ const Home = () => {
                 <div className="gradient-border mt-6">
                     <Link to="/contact" className="flat-button">
                         CONTACT ME
+                    </Link>
+                </div>
+                <div className="gradient-border mt-6 ms-6">
+                    <Link to="/about" className="flat-button">
+                        ABOUT ME
                     </Link>
                 </div>
             </div>
