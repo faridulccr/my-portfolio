@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import F_letter from "../../assets/images/newF2.svg";
-import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-import "../AnimatedLetters/AnimatedLetters.scss";
+import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
+import "../../components/AnimatedLetters/AnimatedLetters.scss";
 import "./Home.scss";
 import Logo from "./Logo";
 

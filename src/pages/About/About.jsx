@@ -9,7 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
-import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import "./About.scss";
 
 const About = () => {

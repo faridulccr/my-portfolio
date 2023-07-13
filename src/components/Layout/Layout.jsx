@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Sidebar from "../../pages/Sidebar/Sidebar";
+import Sidebar from "../Sidebar/Sidebar";
 import "./Layout.scss";
 
 const Layout = ({ children }) => {

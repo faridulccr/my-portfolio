@@ -2,7 +2,7 @@
 import emailjs from "@emailjs/browser";
 import { useEffect, useRef, useState } from "react";
 import Loader from "react-loaders";
-import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import "./Contact.scss";
 // https://react-leaflet.js.org/ => map link
 import "leaflet/dist/leaflet.css";

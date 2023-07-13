@@ -9,7 +9,7 @@ import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import LogoF from "../../assets/images/newF2.svg";
-import ActiveRoute from "../../components/active-route/ActiveRoute";
+import ActiveRoute from "../active-route/ActiveRoute";
 import "./Sidebar.scss";
 
 const Sidebar = () => {
