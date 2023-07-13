@@ -1,0 +1,50 @@
+.skill-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .front-end,
+    .back-end {
+        margin-left: 100px;
+        vertical-align: middle;
+        display: table-cell;
+
+        .heading {
+            width: fit-content;
+            font-size: 4rem;
+            font-family: "Coolvetica";
+            color: #ffd700;
+            font-weight: 400;
+            margin-bottom: 40px;
+            position: relative;
+            left: 10px;
+
+            &::before {
+                content: "<h1>";
+                font-family: "La Belle Aurore";
+                font-size: 1.9rem;
+                position: absolute;
+                top: 0px;
+                opacity: 0.6;
+                line-height: 0px;
+            }
+
+            &::after {
+                content: "</h1>";
+                font-family: "La Belle Aurore";
+                font-size: 1.9rem;
+                position: absolute;
+                left: 100%;
+                bottom: 0;
+                opacity: 0.6;
+                line-height: 0px;
+            }
+        }
+
+        .text-animate-hover {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

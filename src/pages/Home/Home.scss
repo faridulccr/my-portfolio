@@ -62,16 +62,17 @@ h2 {
     }
 
     .heading {
+        width: fit-content;
         font-size: 3rem;
         &::before {
-            top: -20px;
-            left: -10px;
+            top: -40px;
+            left: 25px;
             transform: translate(-100%, 100%);
         }
 
         &::after {
-            margin-top: 20px;
-            margin-left: 20px;
+            bottom: -23px;
+            right: 0;
         }
     }
 }
