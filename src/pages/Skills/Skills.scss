@@ -1,7 +1,7 @@
 .skill-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    gap: 20px;
 
     .front-end,
     .back-end {
@@ -46,5 +46,115 @@
                 color: #fff;
             }
         }
+    }
+}
+.skill-text {
+    width: fit-content;
+    width: fit-content;
+    background: linear-gradient(
+        to right,
+        rgb(216, 209, 223),
+        rgb(235, 183, 119)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Coolvetica";
+}
+.bg-color {
+    animation-name: progressbar;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+}
+
+.tooltip {
+    background: linear-gradient(
+        to right,
+        rgb(35, 9, 61),
+        rgb(165, 9, 9),
+        rgb(83, 4, 70)
+    );
+    color: rgb(240, 237, 237);
+    animation-name: tooltip;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-fill-mode: both;
+
+    span {
+        background-color: rgb(240, 5, 5);
+    }
+}
+
+@keyframes progressbar {
+    from,
+    to {
+        width: 0;
+        background: linear-gradient(
+            to right,
+            rgb(62, 9, 116),
+            rgb(7, 87, 31),
+            rgb(5, 11, 94)
+        );
+    }
+    50% {
+        background: linear-gradient(
+            to right,
+            rgb(161, 13, 137),
+            rgb(10, 93, 141),
+            rgb(233, 35, 9)
+        );
+    }
+    90% {
+        width: 100%;
+        background: linear-gradient(
+            to right,
+            rgb(161, 13, 137),
+            rgb(10, 141, 134),
+            rgb(71, 7, 87)
+        );
+    }
+}
+
+@keyframes tooltip {
+    from,
+    to {
+        background: linear-gradient(
+            to right,
+            rgb(62, 9, 116),
+            rgb(165, 9, 9),
+            rgb(5, 11, 94)
+        );
+    }
+    50% {
+        // transform: rotateY(360deg);
+        transform: rotateZ(-35deg);
+        background: linear-gradient(
+            to right,
+            rgb(161, 13, 137),
+            rgb(165, 9, 9),
+            rgb(233, 35, 9)
+        );
+    }
+    90% {
+        background: linear-gradient(
+            to right,
+            rgb(161, 13, 137),
+            rgb(165, 9, 9),
+            rgb(71, 7, 87)
+        );
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .skill-page {
+        grid-template-columns: 1fr;
+    }
+    .front-end,
+    .back-end {
+        margin-left: 30px !important;
     }
 }

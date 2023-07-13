@@ -17,7 +17,7 @@ const Sidebar = () => {
         <div className="nav-bar">
             <Link className="logo block" to="/">
                 <img className="logoF" src={LogoF} alt="logo" />
-                <h2 className="sub-logo text-center">Faridul</h2>
+                <h2 className="sub-logo text-center">Farid</h2>
             </Link>
 
             <nav>

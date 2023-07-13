@@ -1,8 +1,61 @@
-.logo-container {
+.solid-logo {
+    display: block;
+    width: 100%;
+    height: 485px;
+    margin-top: -40px;
+    margin-left: -20px;
+}
+
+.box {
+    --border-size: 3px;
+    --border-angle: 0turn;
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: conic-gradient(
+            from var(--border-angle),
+            rgb(62, 9, 116),
+            rgb(73, 117, 14) 50%,
+            rgb(161, 13, 137)
+        ),
+        conic-gradient(
+            from var(--border-angle),
+            transparent 20%,
+            #08f,
+            #f03,
+            rgb(3, 221, 58)
+        );
+    background-size: calc(100% - (var(--border-size) * 2))
+            calc(100% - (var(--border-size) * 2)),
+        cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+        to {
+            --border-angle: 1turn;
+        }
+    }
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+@media screen and (max-width: 640px) {
     .solid-logo {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin: 0 auto;
+        height: 435px;
+    }
+    .box {
+        width: 300px;
+        height: 400px;
     }
 }

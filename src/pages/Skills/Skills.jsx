@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
+import BackEnd from "./BackEnd";
+import FrontEnd from "./FrontEnd";
 import "./Skills.scss";
 
 const Skills = () => {
@@ -13,7 +15,7 @@ const Skills = () => {
     }, []);
     return (
         <>
-            <div className="skill-page border">
+            <div className="skill-page">
                 <div className="front-end">
                     <h1 className="heading">
                         <AnimatedLetters
@@ -22,6 +24,7 @@ const Skills = () => {
                             id={1}
                         />
                     </h1>
+                    <FrontEnd />
                 </div>
                 <div className="back-end">
                     <h1 className="heading">
@@ -31,6 +34,7 @@ const Skills = () => {
                             id={1}
                         />
                     </h1>
+                    <BackEnd />
                 </div>
             </div>
             <Loader type="pacman" />

@@ -1,6 +1,6 @@
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
-import logoF from "../../assets/images/Faridul.jpg";
+import logoF from "../../assets/images/Faridul.png";
 import "./Logo.scss";
 
 const Logo = () => {
@@ -20,21 +20,28 @@ const Logo = () => {
     };
     return (
         <div>
-            <div className="logo-container">
-                <img className="solid-logo" src={logoF} alt="faridul's face" />
-            </div>
-            <div className="flex flex-col items-center">
-                <div className="gradient-border mx-auto mt-5">
-                    <button className="flat-button" onClick={onButtonClick}>
-                        DOWNLOAD RESUME
-                    </button>
+            <div className="box">
+                <div className="logo-container">
+                    <img
+                        className="solid-logo"
+                        src={logoF}
+                        alt="faridul's face"
+                    />
                 </div>
-                <div className="gradient-border mx-auto mt-5">
+            </div>
+
+            <div className="gradient-border block mx-auto mt-5">
+                <button className="flat-button" onClick={onButtonClick}>
+                    DOWNLOAD RESUME
+                </button>
+            </div>
+            <div className="flex justify-center flex-wrap gap-5 mt-5">
+                <div className="gradient-border">
                     <Link to="/skills" className="flat-button">
                         MY SKILLS
                     </Link>
                 </div>
-                <div className="gradient-border mx-auto mt-5">
+                <div className="gradient-border">
                     <Link to="/projects" className="flat-button">
                         MY PROJECTS
                     </Link>
