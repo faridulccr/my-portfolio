@@ -15,16 +15,16 @@
     overflow: hidden;
     background-image: conic-gradient(
             from var(--border-angle),
-            rgb(62, 9, 116),
-            rgb(73, 117, 14) 50%,
-            rgb(161, 13, 137)
+            #273c75,
+            #192a56 50%,
+            #273c75
         ),
         conic-gradient(
             from var(--border-angle),
             transparent 20%,
-            #08f,
-            #f03,
-            rgb(3, 221, 58)
+            #273c75,
+            #192a56,
+            #273c75
         );
     background-size: calc(100% - (var(--border-size) * 2))
             calc(100% - (var(--border-size) * 2)),

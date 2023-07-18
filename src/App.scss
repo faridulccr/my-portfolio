@@ -35,6 +35,7 @@ body {
     display: block;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #2f3640;
 }
 
 input,
@@ -58,20 +59,20 @@ textarea {
     display: inline-block;
     width: fit-content;
     position: relative;
-    background: linear-gradient(45deg, red, purple);
+    background: linear-gradient(45deg, #fbc531, #44bd32, #c23616);
     // background: linear-gradient(45deg, #b604eca6, #4b810efb);
-    padding: 3px;
+    padding: 1px;
     border-radius: 5px;
 }
 
 .flat-button {
     // background: linear-gradient(45deg, #4b810efb, #b604eca6);
-    background: #022c43 !important;
-    color: #ee0ca3fb;
+    background: #192a56 !important;
+    color: #fbc531;
     font-size: 13px;
+    font-family: "Helvetica Neue", "sans-serif";
     font-weight: 400;
-    font-family: "sans-serif";
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     text-decoration: none;
     border-radius: 5px;
     padding: 10px 18px;
@@ -82,11 +83,14 @@ textarea {
     transition: 0.3s;
 
     &:hover {
-        background: linear-gradient(
-            45deg,
-            purple,
-            rgb(216, 145, 13)
-        ) !important;
-        color: #fff;
+        background: linear-gradient(-45deg, #487eb0, #192a56) !important;
+        color: #e1b12c;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .flat-button {
+        font-size: 11px;
+        padding: 8px 9px;
     }
 }

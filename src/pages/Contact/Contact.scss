@@ -15,7 +15,7 @@
         .gradient-border {
             display: block;
             width: 100%;
-            padding: 3px;
+            padding: 1px;
         }
         .gradient-border.send-btn {
             display: inline-block;
@@ -40,10 +40,11 @@
         width: 100%;
         border: none;
         outline: none;
-        background-color: #115173;
+        // background-color: #115173;
+        background-color: #192a56;
         height: 50px;
         font-size: 16px;
-        color: #fff;
+        color: #9c88ff;
         padding: 0 20px;
         font-family: "sans-serif";
     }
@@ -52,22 +53,22 @@
         width: 100%;
         border: none;
         outline: none;
-        background: #115173;
+        background: #192a56;
         font-size: 16px;
-        color: #fff;
+        color: #9c88ff;
         padding: 20px;
         min-height: 150px;
         font-family: "sans-serif";
         resize: none;
     }
     .message.gradient-border {
-        height: 156px;
+        height: 152px;
     }
 }
 
 .info-map {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(53, 59, 72, 0.8);
     top: 0;
     right: 0;
     z-index: 999999;
@@ -77,13 +78,7 @@
     border-top-right-radius: 8px;
 
     .text-color {
-        background: linear-gradient(
-            45deg,
-            #ee2e0cfb,
-            #4de606f8,
-            #e606a3f1,
-            #e6065cf8
-        );
+        background: linear-gradient(45deg, #fbc531, #4cd137, #9c88ff, #c23616);
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: "Helvetica";
@@ -112,16 +107,10 @@
     animation-fill-mode: forwards;
 }
 .leaflet-popup-content-wrapper {
-    background-color: #022c43 !important;
+    background-color: #192a56 !important;
 }
 .leaflet-popup-content {
-    background: linear-gradient(
-        45deg,
-        #ee2e0cfb,
-        #4de606f8,
-        #e606a3f1,
-        #e6065cf8
-    );
+    background: linear-gradient(45deg, #fbc531, #4cd137, #9c88ff, #c23616);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Helvetica";

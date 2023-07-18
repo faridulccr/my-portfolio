@@ -9,6 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
+import { Link } from "react-router-dom";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import "./About.scss";
 
@@ -59,13 +60,18 @@ const About = () => {
                         Once again, I want to express my gratitude for your
                         interest in getting to know me better.
                     </p>
-                    <div className="gradient-border mt-6">
+                    <div className="gradient-border mt-6 me-5">
                         <a
                             href="https://drive.google.com/file/d/1E8ME7B_dUuHy6XLEoJ3lK49rPic7dDkv/view?usp=drive_link"
                             className="flat-button"
                         >
                             VIEW RESUME
                         </a>
+                    </div>
+                    <div className="gradient-border">
+                        <Link to="/projects" className="flat-button">
+                            VIEW PROJECTS
+                        </Link>
                     </div>
                 </div>
 

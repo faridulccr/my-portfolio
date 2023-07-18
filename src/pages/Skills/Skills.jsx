@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
+import { Link } from "react-router-dom";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import BackEnd from "./BackEnd";
 import FrontEnd from "./FrontEnd";
 import "./Skills.scss";
+import Tools from "./Tools";
 
 const Skills = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
@@ -35,7 +37,24 @@ const Skills = () => {
                         />
                     </h1>
                     <BackEnd />
+                    <div className="text-center pt-10">
+                        <div className="gradient-border">
+                            <Link to="/projects" className="flat-button">
+                                VIEW PROJECTS
+                            </Link>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div className="tools mt-10">
+                <h1 className="heading w-fit mx-auto">
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        text="Tools"
+                        id={1}
+                    />
+                </h1>
+                <Tools />
             </div>
             <Loader type="pacman" />
         </>

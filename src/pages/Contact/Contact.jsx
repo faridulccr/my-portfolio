@@ -103,6 +103,14 @@ const Contact = () => {
                                     ></textarea>
                                 </li>
                                 <li className="text-right">
+                                    <div className="gradient-border send-btn mt-6 me-5">
+                                        <button
+                                            type="reset"
+                                            className="flat-button"
+                                        >
+                                            RESET
+                                        </button>
+                                    </div>
                                     <div className="gradient-border send-btn mt-6">
                                         <button
                                             type="submit"

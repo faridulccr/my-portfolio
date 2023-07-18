@@ -1,8 +1,8 @@
 .nav-bar {
     width: 60px;
     min-height: 500px;
-    height: 100%;
-    background: linear-gradient(#011, #013, #011);
+    height: 100vh;
+    background: linear-gradient(#353b48, #273c75, #2f3640);
     z-index: 3;
 
     .logo {
@@ -42,15 +42,19 @@
 
         a {
             font-size: 22px;
-            color: #4d4d4e;
+            color: #7f8fa6;
             display: block;
             line-height: 51px;
             height: 51px;
             text-decoration: none;
             position: relative;
 
+            svg {
+                color: #7f8fa6;
+            }
+
             &:hover {
-                color: #ffd700;
+                color: #e1b12c;
 
                 svg {
                     opacity: 0;
@@ -94,7 +98,7 @@
 
         a.active {
             svg {
-                color: #ffd700;
+                color: #e1b12c;
             }
         }
     }

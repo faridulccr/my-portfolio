@@ -12,7 +12,7 @@
             width: fit-content;
             font-size: 4rem;
             font-family: "Coolvetica";
-            color: #ffd700;
+            color: #e1b12c;
             font-weight: 400;
             margin-bottom: 40px;
             position: relative;
@@ -42,7 +42,7 @@
 
         p {
             font-size: 15px;
-            color: #fff;
+            color: #9c88ff;
             font-family: sans-serif;
             font-weight: 300;
             min-width: fit-content;
@@ -62,7 +62,7 @@
 
         .text-animate-hover {
             &:hover {
-                color: #fff;
+                color: #9c88ff;
             }
         }
     }
@@ -92,11 +92,11 @@
         .face4,
         .face5,
         .face6 {
-            width: 180px;
-            height: 180px;
-            border: 1px solid #ccc;
-            background-color: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 0 20px 0px lightyellow;
+            width: 190px;
+            height: 190px;
+            border: 1px solid #718093;
+            background-color: rgba(127, 143, 166, 0.3);
+            box-shadow: 0 0 20px 0px #dcdde1;
             //for the icon
             display: flex;
             justify-content: center;

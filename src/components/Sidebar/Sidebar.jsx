@@ -22,24 +22,24 @@ const Sidebar = () => {
 
             <nav>
                 <ActiveRoute to="/">
-                    <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faHome} />
                 </ActiveRoute>
                 <ActiveRoute className="about-link" to="/about">
-                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faUser} />
                 </ActiveRoute>
                 <ActiveRoute className="contact-link" to="/contact">
-                    <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faEnvelope} />
                 </ActiveRoute>
             </nav>
 
             <ul>
                 <li>
                     <a
-                        href="https://www.linkedin.com"
+                        href="https://www.linkedin.com/in/md-faridul-islam-aa5207249"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faLinkedin} color="#7f8fa6" />
                     </a>
                 </li>
                 <li>
@@ -48,7 +48,7 @@ const Sidebar = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faGithub} color="#7f8fa6" />
                     </a>
                 </li>
                 <li>
@@ -57,7 +57,7 @@ const Sidebar = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faYoutube} color="#7f8fa6" />
                     </a>
                 </li>
                 <li>
@@ -66,16 +66,16 @@ const Sidebar = () => {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faFacebook} color="#7f8fa6" />
                     </a>
                 </li>
                 <li>
                     <a
-                        href="https://www.skype.com"
+                        href="https://join.skype.com/invite/x14R5C7OgSmg"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faSkype} color="#7f8fa6" />
                     </a>
                 </li>
             </ul>

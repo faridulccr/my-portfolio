@@ -38,12 +38,12 @@ const Logo = () => {
             <div className="flex justify-center flex-wrap gap-5 mt-5">
                 <div className="gradient-border">
                     <Link to="/skills" className="flat-button">
-                        MY SKILLS
+                        VIEW SKILLS
                     </Link>
                 </div>
                 <div className="gradient-border">
                     <Link to="/projects" className="flat-button">
-                        MY PROJECTS
+                        VIEW PROJECTS
                     </Link>
                 </div>
             </div>

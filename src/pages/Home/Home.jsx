@@ -12,7 +12,7 @@ const Home = () => {
         " Web  Developer.",
         "JavaScript Developer.",
         "Front-end Developer.",
-        "MERN Stack Developer.",
+        "MERN Stack Developer",
         "React  Js Developer.",
         "Back-end Developer.",
     ];
@@ -43,7 +43,7 @@ const Home = () => {
                     <img className="F-letter" src={F_letter} alt="developer" />
                     <AnimatedLetters
                         letterClass={letterClass}
-                        text="aridul"
+                        text="aridul islam"
                         id={5}
                     />
                     <br />

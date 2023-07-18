@@ -15,8 +15,8 @@ const FrontEnd = () => {
             <ProgressBar value="90" />
             <p className="skill-text">React Native</p>
             <ProgressBar value="30" />
-            <p className="skill-text">Next Js</p>
-            <ProgressBar value="60" />
+            {/* <p className="skill-text">Next Js</p>
+            <ProgressBar value="60" /> */}
             <p className="skill-text">Sass</p>
             <ProgressBar value="80" />
             <p className="skill-text">BootStrap</p>
@@ -25,10 +25,6 @@ const FrontEnd = () => {
             <ProgressBar value="90" />
             <p className="skill-text">JQuery</p>
             <ProgressBar value="70" />
-            <p className="skill-text">Git & Github</p>
-            <ProgressBar value="80" />
-            <p className="skill-text">Firebase & JWT</p>
-            <ProgressBar value="80" />
             <p className="skill-text">C</p>
             <ProgressBar value="60" />
         </div>
