@@ -1,20 +1,10 @@
 .app {
-    min-width: 375px;
-    max-width: 1350px;
-    margin: 0 auto;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 60px 1fr;
+    padding-left: 60px;
 }
 .page {
-    min-height: 100vh;
-    color: #444;
-    // background-color: #022c43;
     background-color: #192a56;
     position: relative;
-    // border: 1px solid white;
+    min-height: 100vh;
 }
 
 .tags {

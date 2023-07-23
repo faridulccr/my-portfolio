@@ -1,114 +1,124 @@
 .nav-bar {
     width: 60px;
-    min-height: 500px;
     height: 100vh;
+    min-height: 550px;
     background: linear-gradient(#353b48, #273c75, #2f3640);
     z-index: 3;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
-    .logo {
-        padding: 8px 0;
-        margin-top: 8px;
+.logo {
+    .logoF {
+        display: block;
+        width: 60px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .sub-logo {
+        font-family: "La Belle Aurore";
+        font-size: 23px;
+        font-weight: 900;
+        transition: transform 1s;
+        background: linear-gradient(to top, #ee0ca3fb, #e65f06f8, #93ec04e1);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 130px;
 
-        .logoF {
-            display: block;
-            margin: 0 auto;
-            width: 40px;
-            height: 100px;
-            margin-left: -1px;
-            margin-bottom: -10px;
+        span {
+            margin-top: -10px;
         }
-        .sub-logo {
-            font-family: "La Belle Aurore";
-            font-size: 16px;
-            font-weight: 900;
-            transition: transform 1s;
-            background: linear-gradient(
-                to right,
-                #ee0ca3fb,
-                #e65f06f8,
-                #93ec04e1
-            );
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+        span:first-child {
+            margin-top: 5px;
         }
-        &:hover .sub-logo {
+
+        &:hover {
             transform: rotate(360deg);
         }
     }
+}
 
-    nav {
-        text-align: center;
-        margin-top: 100px;
+nav {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-        a {
-            font-size: 22px;
-            color: #7f8fa6;
-            display: block;
-            line-height: 51px;
-            height: 51px;
-            text-decoration: none;
-            position: relative;
-
-            svg {
-                color: #7f8fa6;
-            }
-
-            &:hover {
-                color: #e1b12c;
-
-                svg {
-                    opacity: 0;
-                }
-
-                &:after {
-                    opacity: 1;
-                }
-            }
-
-            &:after {
-                content: "";
-                font-size: 9px;
-                letter-spacing: 2px;
-                display: block;
-                width: 100%;
-                opacity: 0;
-                position: absolute;
-                bottom: 0;
-                transition: all 0.3s ease-out;
-            }
-
-            &:first-child {
-                &::after {
-                    content: "HOME";
-                }
-            }
-        }
-
-        a.about-link {
-            &:after {
-                content: "ABOUT";
-            }
-        }
-
-        a.contact-link {
-            &:after {
-                content: "CONTACT";
-            }
-        }
-
-        a.active {
-            svg {
-                color: #e1b12c;
-            }
-        }
-    }
-
-    ul {
+    a {
+        font-size: 22px;
+        color: #7f8fa6;
         display: block;
-        list-style: none;
-        text-align: center;
-        margin-top: 70px;
+        line-height: 51px;
+        height: 51px;
+        text-decoration: none;
+        position: relative;
+
+        svg {
+            color: #7f8fa6;
+        }
+
+        &:hover {
+            color: #e1b12c;
+
+            svg {
+                opacity: 0;
+            }
+
+            &:after {
+                opacity: 1;
+            }
+        }
+
+        &:after {
+            content: "";
+            font-size: 9px;
+            letter-spacing: 2px;
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            transition: all 0.3s ease-out;
+        }
+
+        &:first-child {
+            &::after {
+                content: "HOME";
+            }
+        }
     }
+
+    a.about-link {
+        &:after {
+            content: "ABOUT";
+        }
+    }
+
+    a.contact-link {
+        &:after {
+            content: "CONTACT";
+        }
+    }
+
+    a.active {
+        svg {
+            color: #e1b12c;
+        }
+    }
+}
+
+.nav-bar ul {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
 
     li {
         a {

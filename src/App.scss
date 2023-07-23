@@ -31,6 +31,9 @@ html {
 }
 
 body {
+    min-width: 375px;
+    max-width: 1450px;
+    margin: 0 auto;
     font: 300 11px/1.4 "Helvetica Neue", "sans-serif"; /*weight size/line-height default-family safty-family*/
     display: block;
     -webkit-font-smoothing: antialiased;

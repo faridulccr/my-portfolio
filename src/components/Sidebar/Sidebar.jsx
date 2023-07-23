@@ -8,7 +8,7 @@ import {
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import LogoF from "../../assets/images/newF2.svg";
+import LogoF from "../../assets/images/Faridul.png";
 import ActiveRoute from "../active-route/ActiveRoute";
 import "./Sidebar.scss";
 
@@ -17,7 +17,13 @@ const Sidebar = () => {
         <div className="nav-bar">
             <Link className="logo block" to="/">
                 <img className="logoF" src={LogoF} alt="logo" />
-                <h2 className="sub-logo text-center">Farid</h2>
+                <h2 className="sub-logo">
+                    <span>F</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>I</span>
+                    <span>D</span>
+                </h2>
             </Link>
 
             <nav>

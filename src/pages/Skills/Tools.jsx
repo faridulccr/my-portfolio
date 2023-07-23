@@ -2,31 +2,18 @@ import ProgressBar from "./ProgressBar";
 
 const Tools = () => {
     return (
-        <div className="pe-10 grid sm:grid-cols-2 gap-5 sm:gap-40">
-            <div>
-                <p className="skill-text">Vs Code</p>
-                <ProgressBar value="95" />
-                <p className="skill-text">Chrome DevTools</p>
-                <ProgressBar value="90" />
-                <p className="skill-text">Git & Github</p>
-                <ProgressBar value="80" />
-                <p className="skill-text">Firebase & JWT</p>
-                <ProgressBar value="90" />
-                <p className="skill-text">npm</p>
-                <ProgressBar value="80" />
-            </div>
-            <div>
-                <p className="skill-text">Docker</p>
-                <ProgressBar value="30" />
-                <p className="skill-text">Netlify</p>
-                <ProgressBar value="80" />
-                <p className="skill-text">Heroku</p>
-                <ProgressBar value="80" />
-                <p className="skill-text">Surge</p>
-                <ProgressBar value="80" />
-                <p className="skill-text">Photoshop</p>
-                <ProgressBar value="50" />
-            </div>
+        <div className="pe-10 tools-container">
+            <ProgressBar name="Vs Code" value="95" />
+            <ProgressBar name="Chrome DevTools" value="90" />
+            <ProgressBar name="Git & Github" value="80" />
+            <ProgressBar name="Firebase" value="90" />
+            <ProgressBar name="JWT" value="90" />
+            <ProgressBar name="npm" value="80" />
+            <ProgressBar name="Docker" value="30" />
+            <ProgressBar name="Netlify" value="80" />
+            <ProgressBar name="Heroku" value="80" />
+            <ProgressBar name="Surge" value="80" />
+            <ProgressBar name="PhotoShop" value="50" />
         </div>
     );
 };

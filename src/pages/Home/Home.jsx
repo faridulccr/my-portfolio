@@ -26,7 +26,7 @@ const Home = () => {
 
         const intervalId = setInterval(
             () => setIndex((index) => index + 1),
-            5000 // every 7 seconds
+            5000 // every 5 seconds
         );
         return () => clearTimeout(intervalId);
     }, []);

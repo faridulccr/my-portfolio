@@ -2,31 +2,19 @@ import ProgressBar from "./ProgressBar";
 
 const FrontEnd = () => {
     return (
-        <div className="pe-10">
-            <p className="skill-text">HTML5</p>
-            <ProgressBar value="90" />
-            <p className="skill-text">CSS3</p>
-            <ProgressBar value="85" />
-            <p className="skill-text">JavaScript</p>
-            <ProgressBar value="85" />
-            <p className="skill-text">ES6</p>
-            <ProgressBar value="80" />
-            <p className="skill-text">React Js</p>
-            <ProgressBar value="90" />
-            <p className="skill-text">React Native</p>
-            <ProgressBar value="30" />
-            {/* <p className="skill-text">Next Js</p>
-            <ProgressBar value="60" /> */}
-            <p className="skill-text">Sass</p>
-            <ProgressBar value="80" />
-            <p className="skill-text">BootStrap</p>
-            <ProgressBar value="90" />
-            <p className="skill-text">Tailwind CSS</p>
-            <ProgressBar value="90" />
-            <p className="skill-text">JQuery</p>
-            <ProgressBar value="70" />
-            <p className="skill-text">C</p>
-            <ProgressBar value="60" />
+        <div className="pe-10 skill-container">
+            <ProgressBar name="HTML5" value="90" />
+            <ProgressBar name="CSS3" value="85" />
+            <ProgressBar name="JavaScript" value="85" />
+            <ProgressBar name="ES6" value="80" />
+            <ProgressBar name="React.js" value="90" />
+            {/* <ProgressBar name="React Native" value="30" /> */}
+            <ProgressBar name="Next.js" value="60" />
+            <ProgressBar name="Sass" value="80" />
+            <ProgressBar name="BootStrap" value="90" />
+            <ProgressBar name="Tailwind CSS" value="90" />
+            <ProgressBar name="jQuery" value="70" />
+            {/* <ProgressBar name="C" value="60" /> */}
         </div>
     );
 };
