@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import F_letter from "../../assets/images/newF2.svg";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import "../../components/AnimatedLetters/AnimatedLetters.scss";
+import Cube from "../../components/cube/Cube";
 import "./Home.scss";
-import Logo from "./Logo";
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
@@ -33,7 +34,7 @@ const Home = () => {
 
     return (
         <div className="container home-page">
-            <div className="ps-5 sm:ps-32 mb-20 sm:mb-0">
+            <div className="ps-5 sm:ps-32">
                 <h1 className="heading">
                     <span className={letterClass}>H</span>
                     <span className={`${letterClass} _2`}>i,</span>
@@ -54,21 +55,25 @@ const Home = () => {
                         id={index ? 2 : 11}
                     />
                 </h1>
-                <div className="flex flex-wrap justify-center sm:justify-start gap-5 mt-10">
+
+                <div className="flex justify-center flex-wrap gap-5 mt-5">
                     <div className="gradient-border">
-                        <Link to="/contact" className="flat-button">
-                            CONTACT ME
+                        <Link to="/skills" className="flat-button">
+                            SKILLS
                         </Link>
                     </div>
                     <div className="gradient-border">
-                        <Link to="/about" className="flat-button">
-                            ABOUT ME
+                        <Link to="/projects" className="flat-button">
+                            PROJECTS
                         </Link>
                     </div>
                 </div>
             </div>
 
-            <Logo />
+            <div className="cube-container">
+                <Cube />
+            </div>
+            <Loader type="pacman" />
         </div>
     );
 };

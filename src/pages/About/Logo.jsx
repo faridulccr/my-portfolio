@@ -1,5 +1,3 @@
-import Loader from "react-loaders";
-import { Link } from "react-router-dom";
 import logoF from "../../assets/images/Faridul.png";
 import "./Logo.scss";
 
@@ -21,13 +19,7 @@ const Logo = () => {
     return (
         <div>
             <div className="box">
-                <div className="logo-container">
-                    <img
-                        className="solid-logo"
-                        src={logoF}
-                        alt="faridul's face"
-                    />
-                </div>
+                <img className="solid-logo" src={logoF} alt="faridul's face" />
             </div>
 
             <div className="gradient-border block mx-auto mt-5">
@@ -35,20 +27,6 @@ const Logo = () => {
                     DOWNLOAD RESUME
                 </button>
             </div>
-            <div className="flex justify-center flex-wrap gap-5 mt-5">
-                <div className="gradient-border">
-                    <Link to="/skills" className="flat-button">
-                        VIEW SKILLS
-                    </Link>
-                </div>
-                <div className="gradient-border">
-                    <Link to="/projects" className="flat-button">
-                        VIEW PROJECTS
-                    </Link>
-                </div>
-            </div>
-
-            <Loader type="pacman" />
         </div>
     );
 };

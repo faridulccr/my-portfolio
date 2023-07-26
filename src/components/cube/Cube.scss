@@ -1,0 +1,114 @@
+.stage-cube-cont {
+    display: flex;
+    align-items: center;
+    //spin animation
+    .cube-spinner {
+        // can be used any name for animation
+        animation-name: spinCube;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 12s;
+        transform-style: preserve-3d;
+        transform-origin: 100px 100px 0;
+        margin-left: calc(50% - 100px);
+        margin-top: calc(-50% + 100px);
+
+        .face1,
+        .face2,
+        .face3,
+        .face4,
+        .face5,
+        .face6 {
+            width: 190px;
+            height: 190px;
+            border: 1px solid #718093;
+            background-color: rgba(127, 143, 166, 0.3);
+            box-shadow: 0 0 20px 0px #dcdde1;
+            //for the icon
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            position: absolute; // for every div
+        }
+
+        .face1 {
+            //translateZ move the center point of the object
+            transform: translateZ(100px);
+        }
+        .face2 {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .face3 {
+            transform: rotateY(90deg) rotateZ(180deg) translateZ(100px);
+        }
+        .face4 {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .face5 {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .face6 {
+            transform: translateZ(-100px);
+        }
+    }
+
+    @keyframes spinCube {
+        from,
+        to {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        16% {
+            transform: rotateX(90deg) rotateY(90deg) rotateZ(-90deg);
+        }
+        33% {
+            transform: rotateX(180deg) rotateY(90deg) rotateZ(0deg);
+        }
+        50% {
+            transform: rotateX(90deg) rotateY(180deg) rotateZ(-180deg);
+        }
+        66% {
+            transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+        }
+        83% {
+            transform: rotateX(-90deg) rotateY(0deg) rotateZ(180deg);
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cube-spinner {
+        margin-left: calc(50% - 75px);
+        margin-top: calc(-50%) !important;
+
+        .face1,
+        .face2,
+        .face3,
+        .face4,
+        .face5,
+        .face6 {
+            width: 150px !important;
+            height: 150px !important;
+        }
+
+        .face1 {
+            //translateZ move the center point of the object
+            transform: translateZ(80px) !important;
+        }
+        .face2 {
+            transform: rotateX(90deg) translateZ(80px) !important;
+        }
+        .face3 {
+            transform: rotateY(90deg) rotateZ(180deg) translateZ(80px) !important;
+        }
+        .face4 {
+            transform: rotateY(-90deg) translateZ(80px) !important;
+        }
+        .face5 {
+            transform: rotateX(-90deg) translateZ(80px) !important;
+        }
+        .face6 {
+            transform: translateZ(-80px) !important;
+        }
+    }
+}

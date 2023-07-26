@@ -1,17 +1,9 @@
-import {
-    faCss3,
-    faGitAlt,
-    faHtml5,
-    faJsSquare,
-    faNodeJs,
-    faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import "./About.scss";
+import Logo from "./Logo";
 
 const About = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
@@ -70,36 +62,11 @@ const About = () => {
                     </div>
                     <div className="gradient-border">
                         <Link to="/projects" className="flat-button">
-                            VIEW PROJECTS
+                            PROJECTS
                         </Link>
                     </div>
                 </div>
-
-                <div className="stage-cube-cont">
-                    <div className="cube-spinner">
-                        <div className="face1">
-                            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                        </div>
-                        <div className="face2">
-                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-                        </div>
-                        <div className="face3">
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-                        </div>
-                        <div className="face4">
-                            <FontAwesomeIcon
-                                icon={faJsSquare}
-                                color="#EFD81D"
-                            />
-                        </div>
-                        <div className="face5">
-                            <FontAwesomeIcon icon={faNodeJs} color="#68a063" />
-                        </div>
-                        <div className="face6">
-                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-                        </div>
-                    </div>
-                </div>
+                <Logo />
             </div>
             <Loader type="pacman" />
         </>

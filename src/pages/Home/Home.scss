@@ -46,14 +46,21 @@
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
     .home-page {
         grid-template-columns: 1fr;
+        justify-content: center;
     }
-
+    .cube-container {
+        min-height: 350px;
+        padding: 120px;
+    }
+}
+@media screen and (max-width: 640px) {
     .heading {
         width: fit-content;
         font-size: 3rem;
+        margin-bottom: 20px;
         &::before {
             top: -40px;
             left: 25px;
@@ -64,5 +71,10 @@
             bottom: -23px;
             right: 0;
         }
+    }
+
+    .cube-container {
+        min-height: 250px;
+        padding: 80px;
     }
 }
