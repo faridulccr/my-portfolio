@@ -52,8 +52,8 @@
         justify-content: center;
     }
     .cube-container {
-        min-height: 350px;
-        padding: 120px;
+        height: 350px;
+        padding-top: 120px;
     }
 }
 @media screen and (max-width: 640px) {
@@ -74,7 +74,7 @@
     }
 
     .cube-container {
-        min-height: 250px;
-        padding: 80px;
+        height: 80px;
+        padding-top: 50px;
     }
 }
