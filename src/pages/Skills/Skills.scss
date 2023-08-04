@@ -15,6 +15,111 @@
 .tools-container {
     grid-template-columns: repeat(4, 1fr);
 }
+
+.skills {
+    color: #e1b12c;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: "Coolvetica";
+    width: fit-content;
+    border: 2px solid #fff;
+    background-color: #192a56;
+    border-radius: 50%;
+    border-bottom: none;
+    border-left: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-90%);
+    z-index: 99;
+
+    @media screen and (max-width: 450px) {
+        font-size: 16px;
+        padding: 5px 5px;
+    }
+}
+/*=====================================
+    Skill sec styles
+======================================*/
+.skill-sec {
+    margin-top: 40px;
+    .card {
+        width: 45%;
+        display: block;
+        position: relative;
+
+        &:nth-child(odd) {
+            margin-left: auto;
+            padding-bottom: 10px;
+            margin-top: -30px;
+        }
+
+        &:nth-child(even) {
+            margin-top: -45px;
+        }
+
+        &:nth-child(odd):before {
+            content: "";
+            position: absolute;
+            right: 111.11%;
+            top: 67%;
+            transform: translate(50%, -50%);
+            width: 20px;
+            height: 20px;
+            border: 5px solid #192a56;
+            // background-color: #e1b12c;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        &:nth-child(odd):after {
+            content: "";
+            position: absolute;
+            left: -7.5%;
+            top: 67%;
+            transform: translateY(-50%);
+            width: 6%;
+            height: 2px;
+            background: #d9d1d1;
+        }
+
+        &:nth-child(even):before {
+            content: "";
+            position: absolute;
+            left: 111.11%;
+            top: 76%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            border: 5px solid #192a56;
+            // background-color: #e1b12c;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        &:nth-child(even):after {
+            content: "";
+            position: absolute;
+            right: -7.5%;
+            top: 76%;
+            transform: translateY(-50%);
+            width: 6%;
+            height: 2px;
+            background: #d9d1d1;
+        }
+
+        &:nth-child(odd) .card-body:before {
+            content: "";
+            position: absolute;
+            right: 111.11%;
+            top: 0;
+            transform: translateX(50%);
+            width: 0px;
+            height: 100%;
+            border: 1px dashed #fff;
+        }
+    }
+}
+
 .front-end,
 .back-end,
 .tools {
@@ -84,7 +189,7 @@
     animation-duration: 12s;
     animation-fill-mode: both;
     // background-color: #192a56;
-    background-color: #989b16;
+    // background-color: #989b16;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
@@ -98,10 +203,10 @@
     animation-iteration-count: infinite;
     animation-duration: 5s;
     animation-fill-mode: forwards;
-    background-color: #989b16;
-    span {
-        background-color: #989b16;
-    }
+    // background-color: #989b16;
+    // span {
+    //     background-color: #989b16;
+    // }
 }
 
 @keyframes progressbar {

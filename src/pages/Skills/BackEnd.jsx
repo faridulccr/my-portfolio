@@ -1,17 +1,57 @@
 import ProgressBar from "./ProgressBar";
 const BackEnd = () => {
     return (
-        <div className="pe-10 skill-container">
-            <ProgressBar name="Node.js" value="70" />
-            <ProgressBar name="Express.js" value="90" />
-            <ProgressBar name="MongoDB" value="85" />
-            <ProgressBar name="Mongoose" value="80" />
-            <ProgressBar name="REST API" value="90" />
-            <ProgressBar name="Next.js" value="60" />
-            <ProgressBar name="JWT" value="70" />
-            <ProgressBar name="Node Mailer" value="70" />
-            <ProgressBar name="PostMan" value="90" />
-            <ProgressBar name="Stripe" value="90" />
+        <div className="pe-3 sm:pe-0 skill-sec">
+            <div className="card before:bg-[#079992]">
+                <div className="card-body">
+                    <ProgressBar name="Node.js" value="70" c="#079992" />
+                </div>
+            </div>
+            <div className="card before:bg-[#3c6382]">
+                <div className="card-body">
+                    <ProgressBar name="Express.js" value="90" c="#3c6382" />
+                </div>
+            </div>
+            <div className="card before:bg-[#60a3bc]">
+                <div className="card-body">
+                    <ProgressBar name="MongoDB" value="85" c="#60a3bc" />
+                </div>
+            </div>
+            <div className="card before:bg-[#82ccdd]">
+                <div className="card-body">
+                    <ProgressBar name="Mongoose" value="80" c="#82ccdd" />
+                </div>
+            </div>
+            <div className="card before:bg-[#6a89cc]">
+                <div className="card-body">
+                    <ProgressBar name="REST API" value="90" c="#6a89cc" />
+                </div>
+            </div>
+            <div className="card before:bg-[#4a69bd]">
+                <div className="card-body">
+                    <ProgressBar name="Next.js" value="60" c="#4a69bd" />
+                </div>
+            </div>
+            <div className="card before:bg-[#1e3799]">
+                <div className="card-body">
+                    <ProgressBar name="JWT" value="70" c="#1e3799" />
+                </div>
+            </div>
+            <div className="card before:bg-[#f8c291]">
+                <div className="card-body">
+                    <ProgressBar name="Node Mailer" value="70" c="#f8c291" />
+                </div>
+            </div>
+            <div className="card before:bg-[#e55039]">
+                <div className="card-body">
+                    <ProgressBar name="PostMan" value="90" c="#e55039" />
+                </div>
+            </div>
+            <div className="card before:bg-[#fa983a]">
+                <div className="card-body">
+                    <ProgressBar name="Stripe" value="90" c="#fa983a" />
+                </div>
+            </div>
         </div>
     );
 };

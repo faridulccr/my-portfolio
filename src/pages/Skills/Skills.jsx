@@ -17,30 +17,44 @@ const Skills = () => {
     }, []);
     return (
         <>
-            <div className="skill-page">
-                <div className="front-end">
-                    <h1 className="heading">
+            <div className="skill-page pe-3">
+                <div className="front-end relative">
+                    {/* <h1 className="heading">
                         <AnimatedLetters
                             letterClass={letterClass}
                             text="Front-end Skills"
                             id={1}
                         />
-                    </h1>
+                    </h1> */}
+                    <p className="skills">
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            text="Front-end Skills"
+                            id={1}
+                        />
+                    </p>
                     <FrontEnd />
                 </div>
-                <div className="back-end">
-                    <h1 className="heading">
+                <div className="back-end relative">
+                    {/* <h1 className="heading">
                         <AnimatedLetters
                             letterClass={letterClass}
                             text="Back-end Skills"
                             id={1}
                         />
-                    </h1>
+                    </h1> */}
+                    <p className="skills">
+                        <AnimatedLetters
+                            letterClass={letterClass}
+                            text="Back-end Skills"
+                            id={1}
+                        />
+                    </p>
                     <BackEnd />
                     <div className="text-center pt-10">
                         <div className="gradient-border">
                             <Link to="/projects" className="flat-button">
-                                VIEW PROJECTS
+                                PROJECTS
                             </Link>
                         </div>
                     </div>
