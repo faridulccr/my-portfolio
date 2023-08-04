@@ -7,9 +7,9 @@ const BackEnd = () => {
                     <ProgressBar name="Node.js" value="70" c="#079992" />
                 </div>
             </div>
-            <div className="card before:bg-[#3c6382]">
+            <div className="card before:bg-[#83348e]">
                 <div className="card-body">
-                    <ProgressBar name="Express.js" value="90" c="#3c6382" />
+                    <ProgressBar name="Express.js" value="90" c="#83348e" />
                 </div>
             </div>
             <div className="card before:bg-[#60a3bc]">
@@ -17,9 +17,9 @@ const BackEnd = () => {
                     <ProgressBar name="MongoDB" value="85" c="#60a3bc" />
                 </div>
             </div>
-            <div className="card before:bg-[#82ccdd]">
+            <div className="card before:bg-[#3c6382]">
                 <div className="card-body">
-                    <ProgressBar name="Mongoose" value="80" c="#82ccdd" />
+                    <ProgressBar name="Mongoose" value="80" c="#3c6382" />
                 </div>
             </div>
             <div className="card before:bg-[#6a89cc]">
@@ -37,9 +37,9 @@ const BackEnd = () => {
                     <ProgressBar name="JWT" value="70" c="#1e3799" />
                 </div>
             </div>
-            <div className="card before:bg-[#f8c291]">
+            <div className="card before:bg-[#cf8947]">
                 <div className="card-body">
-                    <ProgressBar name="Node Mailer" value="70" c="#f8c291" />
+                    <ProgressBar name="Node Mailer" value="70" c="#cf8947" />
                 </div>
             </div>
             <div className="card before:bg-[#e55039]">

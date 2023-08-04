@@ -60,14 +60,14 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className="tools mt-10">
-                <h1 className="heading w-fit mx-auto">
+            <div className="tools mt-10 pe-3">
+                {/* <h1 className="heading w-fit mx-auto">
                     <AnimatedLetters
                         letterClass={letterClass}
                         text="Tools"
                         id={1}
                     />
-                </h1>
+                </h1> */}
                 <Tools />
             </div>
             <Loader type="pacman" />

@@ -3,9 +3,9 @@ import ProgressBar from "./ProgressBar";
 const FrontEnd = () => {
     return (
         <div className="pe-3 sm:pe-0 skill-sec">
-            <div className="card before:bg-[#b8e994]">
+            <div className="card before:bg-[#3c6382]">
                 <div className="card-body">
-                    <ProgressBar name="HTML5" value="90" c="#b8e994" />
+                    <ProgressBar name="HTML5" value="90" c="#3c6382" />
                 </div>
             </div>
             <div className="card before:bg-[#38ada9]">

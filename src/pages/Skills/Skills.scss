@@ -1,19 +1,19 @@
 .skill-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    row-gap: 20px;
 }
-.skill-container,
+
 .tools-container {
     display: grid;
-    column-gap: 20px;
+    column-gap: 90px;
 }
 
 .skill-container {
     grid-template-columns: repeat(2, 1fr);
 }
 .tools-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .skills {
@@ -35,7 +35,7 @@
 
     @media screen and (max-width: 450px) {
         font-size: 16px;
-        padding: 5px 5px;
+        padding: 5px 3px;
     }
 }
 /*=====================================
@@ -185,66 +185,48 @@
 .bg-color {
     animation-name: progressbar;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-    animation-fill-mode: both;
-    // background-color: #192a56;
-    // background-color: #989b16;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    &:hover .tooltip {
+        transform: rotate(360deg);
+    }
 }
 
 .tooltip {
     display: inline-block;
-    // background-color: transparent;
     color: #fff;
-    animation-name: tooltip;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    // background-color: #989b16;
-    // span {
-    //     background-color: #989b16;
-    // }
+    transition: 1s;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes progressbar {
     from,
     to {
         width: 0;
-        // background: linear-gradient(to right, #4cd137, #487eb0, #fbc531);
     }
-    80% {
+    100% {
         width: 100%;
     }
 }
-
-// @keyframes tooltip {
-//     from,
-//     to {
-//         transform: rotate(0deg);
-//     }
-//     20% {
-//         transform: rotate(23deg);
-//     }
-//     40% {
-//         transform: rotate(-23deg);
-//     }
-//     60% {
-//         transform: rotate(23deg);
-//     }
-//     80% {
-//         transform: rotate(0deg);
-//     }
-// }
 
 @media screen and (max-width: 950px) {
     .skill-page {
         grid-template-columns: 1fr;
     }
     .tools-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        #tool-2 {
+            display: none;
+        }
+        #tool-sec-2 {
+            margin-top: -30px;
+        }
     }
     .front-end,
     .back-end,

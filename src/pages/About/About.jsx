@@ -54,7 +54,7 @@ const About = () => {
                     </p>
                     <div className="gradient-border mt-6 me-5">
                         <a
-                            href="https://drive.google.com/file/d/1E8ME7B_dUuHy6XLEoJ3lK49rPic7dDkv/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1hGMuRr8mpOaEMlW--EdPWxCoAyKHU7wI/view?usp=drive_link"
                             className="flat-button"
                         >
                             VIEW RESUME
