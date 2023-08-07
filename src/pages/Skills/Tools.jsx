@@ -1,6 +1,9 @@
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../../components/AnimatedLetters/AnimatedLetters";
 import ProgressBar from "./ProgressBar";
+// AOS.init();
 
 const Tools = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
@@ -22,7 +25,10 @@ const Tools = () => {
                 </p>
 
                 <div className="pe-3 sm:pe-0 skill-sec">
-                    <div className="card before:bg-[#079992]">
+                    <div
+                        className="card before:bg-[#079992]"
+                        data-aos="rotate-skill-right"
+                    >
                         <div className="card-body">
                             <ProgressBar
                                 name="Vs Code"
@@ -31,7 +37,10 @@ const Tools = () => {
                             />
                         </div>
                     </div>
-                    <div className="card before:bg-[#38ada9]">
+                    <div
+                        className="card before:bg-[#38ada9]"
+                        data-aos="rotate-skill-left"
+                    >
                         <div className="card-body">
                             <ProgressBar
                                 name="Chrome DevTools"
@@ -40,7 +49,10 @@ const Tools = () => {
                             />
                         </div>
                     </div>
-                    <div className="card before:bg-[#4bc465]">
+                    <div
+                        className="card before:bg-[#4bc465]"
+                        data-aos="rotate-skill-right"
+                    >
                         <div className="card-body">
                             <ProgressBar
                                 name="Git & Github"
@@ -50,7 +62,10 @@ const Tools = () => {
                         </div>
                     </div>
 
-                    <div className="card before:bg-[#457224]">
+                    <div
+                        className="card before:bg-[#457224]"
+                        data-aos="rotate-skill-left"
+                    >
                         <div className="card-body">
                             <ProgressBar
                                 name="Firebase"
@@ -59,12 +74,18 @@ const Tools = () => {
                             />
                         </div>
                     </div>
-                    <div className="card before:bg-[#82ccdd]">
+                    <div
+                        className="card before:bg-[#82ccdd]"
+                        data-aos="rotate-skill-right"
+                    >
                         <div className="card-body">
                             <ProgressBar name="JWT" value="90" c="#82ccdd" />
                         </div>
                     </div>
-                    <div className="card before:bg-[#60a3bc]">
+                    <div
+                        className="card before:bg-[#60a3bc]"
+                        data-aos="rotate-skill-left"
+                    >
                         <div className="card-body">
                             <ProgressBar name="npm" value="80" c="#60a3bc" />
                         </div>
@@ -82,7 +103,10 @@ const Tools = () => {
                 </p>
 
                 <div className="pe-3 sm:pe-0 skill-sec" id="tool-sec-2">
-                    <div className="card before:bg-[#3c6382]">
+                    <div
+                        className="card before:bg-[#3c6382]"
+                        data-aos="rotate-skill-right"
+                    >
                         <div className="card-body">
                             <ProgressBar
                                 name="Netlify"
@@ -91,27 +115,42 @@ const Tools = () => {
                             />
                         </div>
                     </div>
-                    <div className="card before:bg-[#0a3d62]">
+                    <div
+                        className="card before:bg-[#0a3d62]"
+                        data-aos="rotate-skill-left"
+                    >
                         <div className="card-body">
                             <ProgressBar name="Heroku" value="80" c="#0a3d62" />
                         </div>
                     </div>
-                    <div className="card before:bg-[#419f89]">
+                    <div
+                        className="card before:bg-[#419f89]"
+                        data-aos="rotate-skill-right"
+                    >
                         <div className="card-body">
                             <ProgressBar name="Vercel" value="80" c="#419f89" />
                         </div>
                     </div>
-                    <div className="card before:bg-[#6a89cc]">
+                    <div
+                        className="card before:bg-[#6a89cc]"
+                        data-aos="rotate-skill-left"
+                    >
                         <div className="card-body">
                             <ProgressBar name="Surge" value="80" c="#6a89cc" />
                         </div>
                     </div>
-                    <div className="card before:bg-[#3c6382]">
+                    <div
+                        className="card before:bg-[#3c6382]"
+                        data-aos="rotate-skill-right"
+                    >
                         <div className="card-body">
                             <ProgressBar name="Docker" value="30" c="#3c6382" />
                         </div>
                     </div>
-                    <div className="card before:bg-[#4a69bd]">
+                    <div
+                        className="card before:bg-[#4a69bd]"
+                        data-aos="rotate-skill-left"
+                    >
                         <div className="card-body">
                             <ProgressBar
                                 name="PhotoShop"

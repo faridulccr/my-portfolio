@@ -118,6 +118,29 @@
             border: 1px dashed #fff;
         }
     }
+
+    [data-aos="rotate-skill-right"] {
+        opacity: 0;
+        transform: rotateZ(90deg) translateX(60%) translateY(170%);
+        transition-property: transform, opacity;
+
+        &.aos-animate {
+            opacity: 1;
+            transform: rotateZ(0) translateX(0) translateY(0);
+        }
+    }
+
+    [data-aos="rotate-skill-left"] {
+        opacity: 0;
+        transform: rotateZ(-90deg) translateX(-80%) translateY(180%);
+        transition-property: transform, opacity;
+        z-index: 99;
+
+        &.aos-animate {
+            opacity: 1;
+            transform: rotateZ(0) translateX(0) translateY(0);
+        }
+    }
 }
 
 .front-end,

@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
@@ -6,6 +8,7 @@ import BackEnd from "./BackEnd";
 import FrontEnd from "./FrontEnd";
 import "./Skills.scss";
 import Tools from "./Tools";
+AOS.init();
 
 const Skills = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
@@ -60,7 +63,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <div className="tools mt-10 pe-3">
+            <div className="tools mt-10 pe-3 pb-80">
                 {/* <h1 className="heading w-fit mx-auto">
                     <AnimatedLetters
                         letterClass={letterClass}
